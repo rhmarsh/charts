@@ -1,0 +1,11 @@
+.ct-series-a .ct-line {
+    stroke: blue;
+    stroke-width: 5px;
+    stroke-dasharray: 10px 20px;
+}
+
+.ct-point {
+    stroke: red;
+    stroke-width: 20px;
+    stroke-linecap: square;
+}

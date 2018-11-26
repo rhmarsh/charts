@@ -1,0 +1,14 @@
+<span class="grid">
+  <app-navigation (chartType)="drawChart($event)"></app-navigation>
+  <app-header></app-header>
+  <app-kpi1
+    [kpi1Data]="kpi1Data | async"
+    [chartTypeChange]="chartTypeChange | async"></app-kpi1>
+  <app-kpi2
+    [kpi2Data]="kpi2Data | async"
+    [chartTypeChange]="chartTypeChange | async"></app-kpi2>
+  <app-kpi3
+    [kpi3Data]="kpi3Data | async"
+    [chartTypeChange]="chartTypeChange | async"></app-kpi3>
+  <app-footer></app-footer>
+</span>

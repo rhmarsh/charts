@@ -1,0 +1,24 @@
+<p><strong>KPI 1</strong>
+</p>
+<!-- <pre>{{chartTypeChange | json}}</pre> -->
+
+<div id="kpi1" style="height:300px" [hidden]="!flotr2"></div>
+
+<div id="kpi1chartjs" [hidden]="!chartjs">
+    <canvas id="canvas1">{{chart}}</canvas>
+</div>
+
+<div class="ct-chart" id="ct-chart1" [hidden]="!chartist">
+    <p>Revenue</p>
+</div>
+<div id="google1" [hidden]="!googleCharts">
+    <google-chart 
+        [title]="gchart.title"
+        [type]="gchart.type"
+        [data]="gchart.data"
+        [columnNames]="gchart.columnNames"
+        [options]="gchart.options"
+        [width]="gchart.width"
+        [height]="gchart.height">
+    </google-chart>
+</div>

@@ -1,0 +1,23 @@
+<p><strong>KPI 2</strong>
+</p>
+
+<div id="kpi2" style="height:300px" [hidden]="!flotr2"></div>
+
+<div id="kpi2chartjs" [hidden]="!chartjs">
+    <canvas id="canvas2">{{chart}}</canvas>
+</div>
+
+<div class="ct-chart" id="ct-chart2" [hidden]="!chartist">
+    <p>Expenses</p>
+</div>
+<div id="google2" [hidden]="!googleCharts">
+    <google-chart 
+        [title]="gchart.title"
+        [type]="gchart.type"
+        [data]="gchart.data"
+        [columnNames]="gchart.columnNames"
+        [options]="gchart.options"
+        [width]="gchart.width"
+        [height]="gchart.height">
+    </google-chart>
+</div>

@@ -1,0 +1,24 @@
+<p><strong>KPI 3</strong>
+</p>
+
+<div id="kpi3" style="height:300px" [hidden]="!flotr2"></div>
+
+<div id="kpi3chartjs" [hidden]="!chartjs">
+    <canvas id="canvas3">{{chart}}</canvas>
+</div>
+
+<div class="ct-chart" id="ct-chart3" [hidden]="!chartist">
+    <p>2016 Combined</p>
+</div>
+
+<div id="google3" [hidden]="!googleCharts">
+        <google-chart *ngIf="googleCharts"
+            [title]="gchart.title"
+            [type]="gchart.type"
+            [data]="gchart.data"
+            [columnNames]="gchart.columnNames"
+            [options]="gchart.options"
+            [width]="gchart.width"
+            [height]="gchart.height">
+        </google-chart>
+</div>
